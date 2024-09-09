@@ -2,24 +2,53 @@ function pesquisar() {
     // Obtém a seção onde os resultados da pesquisa serão exibidos
     let section = document.getElementById('resultados-pesquisa');
 
-  
+    //Obtém a seção onde a pesquisa é digitada 
+    let campoPesquisa = document.getElementById('campo-pesquisa').value
+    console.log(campoPesquisa);
+
+    //se o campo pesquisa for uma string sem nada
+    if (!campoPesquisa){
+      section.innerHTML = "<p>Nada foi encontrado. Voce não Escreveu o nome do hospital></p>"
+      return
+    }
+
+    //Atribui ao campo pesquisa a opção de pesquisa em letras minusculas
+    campoPesquisa = campoPesquisa.toLowerCase()
+
     // Inicializa uma string vazia para armazenar os resultados formatados
     let resultados = "";
+    let titulo = "";
+    let descricao = "";
+    let tags = "";
   
     // Itera sobre cada dado na lista de dados
     for (let dado of dados) {
-      // Constrói o HTML para cada item de resultado
-      resultados += `
-        <div class="item-resultado">
-          <h2>
-            <a href="#" target="_blank">${dado.titulo}</a>
-          </h2>
-          <p class="descricao-meta">${dado.descricao} </p>
-          <a href="${dado.link}" target="_blank">Mais Informações</a>
-        </div>
-      `;
+      
+      titulo = dado.titulo.toLowerCase()
+      descricao = dado.descricao.toLowerCase()
+      tags = dado.tags.toLowerCase()
+
+    //se no dado campo titulo inclui o campoPesquisa , entaão executa o codigo
+   if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
+   
+    // cria um novo elemento
+   
+    resultados += `
+      <div class="item-resultado">
+        <h2>
+          <a href="#" target="_blank">${dado.titulo}</a>
+        </h2>
+        <p class="descricao-meta">${dado.descricao} </p>
+        <a href="${dado.link}" target="_blank">Mais Informações</a>
+      </div>
+    `;
+   }
     }
   
+    if (!resultados) {
+      resultados = "<p>Nada foi encontrado. Voce escreveu o nome do hospital errado.<p/>"
+    }
+ 
     // Atribui o HTML gerado à seção de resultados
     section.innerHTML = resultados;
   }
