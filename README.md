@@ -1,4 +1,4 @@
-## Buscador de Hospitais: Encontre o hospital ideal para você!
+## Buscador de Hospitais - Imersão Dev com google Gemmini
 
 **O que faz essa aplicação?**
 
