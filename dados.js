@@ -3,13 +3,13 @@ let dados = [
       titulo: "Hospital Felício Rocho",
       descricao: "O Hospital Felício Rocho é uma referência em saúde em Minas Gerais e no Brasil. Localizado em Belo Horizonte, o hospital oferece uma ampla gama de especialidades médicas, além de realizar um grande número de cirurgias e transplantes anualmente. Fundado em 1942, o Felício Rocho é reconhecido por sua excelência em atendimento, corpo clínico altamente qualificado e infraestrutura moderna. A instituição também se destaca por sua atuação em ensino e pesquisa, contribuindo para o avanço da medicina no país.",
       link: "https://www.feliciorocho.org.br/",
-      tags: "bh  minas gerais BH Belo Horizonte"
+      tags: "bh  minas gerais   BH   Belo Horizonte"
     },
     {
       titulo: "Hospital Albert Einstein",
       descricao: "O Hospital Albert Einstein é um dos maiores e mais completos complexos hospitalares da América Latina. Localizado em São Paulo, o Einstein oferece serviços de alta complexidade em diversas áreas da medicina, além de ser referência em pesquisa e ensino. O hospital é reconhecido internacionalmente por sua excelência em atendimento e por seus avanços tecnológicos.",
       link: "https://www.einstein.br/",
-      tags: "maior da amererica latina São Paulo"
+      tags: "maior da amererica latina   São Paulo"
     },
     {
       titulo: "Hospital Sírio-Libanês",
@@ -27,7 +27,7 @@ let dados = [
       titulo: "Hospital Moinhos de Vento",
       descricao: "Referência em cardiologia e transplantes no Sul do país.",
       link: "https://www.hospitalmoinhos.org.br/institucional",
-      tags: "Rio Grande do Sul Porto Alegre " 
+      tags: "Rio Grande do Sul    Porto Alegre " 
     },
     {
       titulo: "Hospital das Clínicas da USP",
