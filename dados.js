@@ -27,7 +27,7 @@ let dados = [
       titulo: "Hospital Moinhos de Vento",
       descricao: "Referência em cardiologia e transplantes no Sul do país.",
       link: "https://www.hospitalmoinhos.org.br/institucional",
-      tags: "Rio Grande do Sul    Porto Alegre " 
+      tags: "Rio Grande do Sul   Porto Alegre" 
     },
     {
       titulo: "Hospital das Clínicas da USP",
