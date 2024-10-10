@@ -69,6 +69,6 @@ let dados = [
       titulo: "Hospital Doutor Badaro Junior",
       descricao: " ",
       link: "https://fmnhbj.com.br/category/blog/",
-      tags: "hbj" 
+      tags: "hbj  Minas Novas" 
     }
   ];
